@@ -1,0 +1,25 @@
+{
+  "name": "cosmoem",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "author": "angelsflyinhell",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.ts",
+    "start": "ts-node src/app.ts"
+  },
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "domparser": "^0.1.1",
+    "get-urls": "^10.0.1",
+    "node-fetch": "^3.1.0",
+    "node-html-parser": "^5.1.0",
+    "wait-console-input": "^0.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.2"
+  }
+}
