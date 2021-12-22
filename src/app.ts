@@ -1,4 +1,4 @@
-import {extractUrl, fetchAnimekisa} from "./lib/Web";
+import {extractUrl, fetchAnimekisa, getFile} from "./lib/Web";
 import inputReader from 'wait-console-input'
 
 console.log('[COSMOEM] API is starting...')
