@@ -7,8 +7,8 @@ console.log('[COSMOEM] API is starting...')
 
 app.listen(config.port,() => {
     app.get('/fetch', async (req, res) => {
-        const title = req.body.title;
-        const episode = req.body.episode;
+        const title = req.body?.title || '';
+        const episode = req.body?.episode || '';
 
         const html = await fetchAnimekisa(title, episode).then(r => {
             return r
