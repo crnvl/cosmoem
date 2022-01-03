@@ -5,8 +5,10 @@ const app = express();
 
 console.log('[COSMOEM] API is starting...')
 
+app.use(express.json())
+
 app.listen(config.port,() => {
-    app.get('/fetch', async (req, res) => {
+    app.post('/fetch', async (req, res) => {
         const title = req.body?.title || '';
         const episode = req.body?.episode || '';
 
